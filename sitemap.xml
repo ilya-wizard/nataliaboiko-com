@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://nataliaboiko.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://nataliaboiko.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nataliaboiko.com/how-i-work.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/how-i-work.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/how-i-work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/how-i-work.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nataliaboiko.com/bg/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://nataliaboiko.com/bg/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nataliaboiko.com/bg/how-i-work.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://nataliaboiko.com/how-i-work.html"/>
+    <xhtml:link rel="alternate" hreflang="bg" href="https://nataliaboiko.com/bg/how-i-work.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nataliaboiko.com/how-i-work.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
