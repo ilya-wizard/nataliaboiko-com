@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nataliaboiko.com/sitemap.xml
+Sitemap: https://nataliaboiko.health/sitemap.xml
