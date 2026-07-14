@@ -381,11 +381,6 @@ p { color: var(--text-muted); }
 .section--page { background: var(--bg-page); }
 .section--hero-tint { background: var(--bg-hero); }
 
-/* A page section right after a tinted band already gets that band's
-   bottom padding as its top gap; drop its own top padding so the
-   spacing above the content matches the spacing below. */
-.section--page { padding-top: 0; }
-
 .section__inner {
   max-width: var(--container-width);
   margin: 0 auto;
