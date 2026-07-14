@@ -444,6 +444,13 @@ p { color: var(--text-muted); }
   padding-bottom: 2px;
 }
 
+.section__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.section__cta .text-link { margin-top: 0; }
+
 /* Cards grid (services) */
 .cards-grid {
   display: grid;
@@ -580,10 +587,16 @@ p { color: var(--text-muted); }
 
 /* Certificates */
 .cert-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
   margin-top: 32px;
+}
+
+.cert-grid .cert-card {
+  flex: 0 1 360px;
+  max-width: 100%;
 }
 
 .cert-card {
