@@ -381,6 +381,11 @@ p { color: var(--text-muted); }
 .section--page { background: var(--bg-page); }
 .section--hero-tint { background: var(--bg-hero); }
 
+/* A page section right after a tinted band already gets that band's
+   bottom padding as its top gap; drop its own top padding so the
+   spacing above the content matches the spacing below. */
+.section--page { padding-top: 0; }
+
 .section__inner {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -555,6 +560,20 @@ p { color: var(--text-muted); }
   gap: 56px;
   align-items: center;
 }
+
+/* Intro with text wrapping around a floated photo (About page) */
+.intro-flow::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.intro-flow .intro-photo-wrap {
+  float: right;
+  margin: 6px 0 28px 48px;
+}
+
+.intro-flow h1 { margin-bottom: 20px; }
 
 .intro-photo-wrap {
   position: relative;
@@ -859,6 +878,8 @@ p { color: var(--text-muted); }
 
   .intro-grid { grid-template-columns: 1fr; text-align: center; }
   .intro-photo-wrap { width: 180px; height: 180px; margin: 0 auto; }
+  .intro-flow { text-align: center; }
+  .intro-flow .intro-photo-wrap { float: none; margin: 0 auto 24px; }
 
   .cert-grid { grid-template-columns: 1fr; }
 
