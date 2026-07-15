@@ -1,8 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "node scripts/sync-storyblok-home.mjs",
+  "buildCommand": "node scripts/sync-storyblok.mjs",
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/index", "destination": "/index.html" }
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/how-i-work", "destination": "/how-i-work.html" }
   ]
 }
