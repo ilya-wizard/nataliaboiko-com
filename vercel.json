@@ -5,6 +5,9 @@
   "rewrites": [
     { "source": "/index", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
-    { "source": "/how-i-work", "destination": "/how-i-work.html" }
+    { "source": "/how-i-work", "destination": "/how-i-work.html" },
+    { "source": "/bg/index", "destination": "/bg/index.html" },
+    { "source": "/bg/about", "destination": "/bg/about.html" },
+    { "source": "/bg/how-i-work", "destination": "/bg/how-i-work.html" }
   ]
 }
