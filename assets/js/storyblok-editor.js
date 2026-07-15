@@ -63,7 +63,7 @@
   }
 
   function fetchDraft() {
-    var url = 'https://api.storyblok.com/v2/cdn/stories/home?token=' + STORYBLOK_TOKEN + '&version=draft' +
+    var url = 'https://api.storyblok.com/v2/cdn/stories/index?token=' + STORYBLOK_TOKEN + '&version=draft' +
       (lang ? '&language=' + lang : '') + '&cv=' + Date.now();
     fetch(url)
       .then(function (r) { return r.json(); })

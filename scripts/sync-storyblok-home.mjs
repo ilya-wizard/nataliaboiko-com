@@ -65,7 +65,7 @@ function replaceBetweenMarkers(html, key, innerHtml) {
 }
 
 async function fetchHomeStory(language) {
-  const url = new URL('https://api.storyblok.com/v2/cdn/stories/home');
+  const url = new URL('https://api.storyblok.com/v2/cdn/stories/index');
   url.searchParams.set('token', TOKEN);
   url.searchParams.set('version', 'published');
   if (language) url.searchParams.set('language', language);
