@@ -1,0 +1,36 @@
+name: Sync Storyblok content (Home page)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest content and update home pages
+        env:
+          STORYBLOK_TOKEN: ${{ secrets.STORYBLOK_TOKEN }}
+        run: node scripts/sync-storyblok-home.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "storyblok-sync-bot"
+          git config user.email "storyblok-sync-bot@users.noreply.github.com"
+          if ! git diff --quiet -- index.html bg/index.html; then
+            git add index.html bg/index.html
+            git commit -m "Sync home page content from Storyblok [skip ci]"
+            git push
+          else
+            echo "No content changes."
+          fi
